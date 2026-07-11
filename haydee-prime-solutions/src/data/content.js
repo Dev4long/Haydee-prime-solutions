@@ -1,14 +1,16 @@
 export const translations = {
   es: {
     meta: {
-      title: 'Haydee Prime Solutions',
+      title: 'HA Prime Solutions',
     },
     nav: {
       home: 'Inicio',
       about: 'Nosotros',
       services: 'Servicios',
       immigration: 'Inmigración',
-      realEstate: 'Bienes Raíces',
+      // realEstate: 'Bienes Raíces',
+      usRealEstate: 'Bienes Raíces EEUU',
+      ecuadorRealEstate: 'Bienes Raíces Ecuador',
       insurance: 'Seguros',
       contact: 'Contacto',
       cta: 'Agenda una Cita',
@@ -21,7 +23,7 @@ export const translations = {
       title: 'Protegemos hoy,',
       titleHighlight: 'construimos mañana.',
       subtitle:
-        'En Haydee Prime Solutions te acompañamos con soluciones integrales y de confianza para proteger a tu familia, invertir en tu futuro y cumplir tus metas migratorias en Estados Unidos y Ecuador.',
+        'En H.A. Prime Solutions te acompañamos con soluciones integrales y de confianza para proteger a tu familia, invertir en tu futuro y cumplir tus metas migratorias en Estados Unidos y Ecuador.',
       ctaPrimary: 'Conoce Nuestros Servicios',
       ctaSecondary: 'Contáctanos',
       scrollHint: 'Desliza para descubrir más',
@@ -30,7 +32,7 @@ export const translations = {
       eyebrow: 'Sobre Nosotros',
       title: 'Un equipo cercano, profesional y bilingüe',
       paragraphs: [
-        'Haydee Prime Solutions nace del compromiso de ofrecer un servicio cálido, honesto y profesional a nuestra comunidad hispana. Acompañamos a familias e individuos en procesos que muchas veces parecen complicados, traduciéndolos en pasos claros y manejables.',
+        'HaydeePrime Solutions nace del compromiso de ofrecer un servicio cálido, honesto y profesional a nuestra comunidad migrante. Acompañamos a familias e individuos en procesos que muchas veces parecen complicados, traduciéndolos en pasos claros y manejables.',
         'Ya sea que estés iniciando un trámite migratorio, buscando tu próxima propiedad o protegiendo el futuro de tu familia con un seguro de vida, nuestro equipo trabaja contigo de principio a fin, con total transparencia y atención personalizada.',
       ],
       values: [
@@ -69,16 +71,16 @@ export const translations = {
           imageAlt: 'Asesora de inmigración revisando documentos con clientes',
           cta: 'Solicitar Consulta',
         },
-        {
-          id: 'real-estate',
-          title: 'Bienes Raíces',
-          tagline: 'Venta y Rentas · EEUU y Ecuador',
-          description:
-            'Encuentra, vende o renta propiedades con el respaldo de un equipo que conoce el mercado en ambos países.',
-          bullets: ['Compra y venta de propiedades', 'Rentas residenciales', 'Inversión inmobiliaria', 'Asesoría en EEUU y Ecuador'],
-          imageAlt: 'Familia observando oportunidades de bienes raíces en Estados Unidos y Ecuador',
-          cta: 'Explorar Propiedades',
-        },
+        // {
+        //   id: 'real-estate',
+        //   title: 'Bienes Raíces',
+        //   tagline: 'Venta y Rentas · EEUU y Ecuador',
+        //   description:
+        //     'Encuentra, vende o renta propiedades con el respaldo de un equipo que conoce el mercado en ambos países.',
+        //   bullets: ['Compra y venta de propiedades', 'Rentas residenciales', 'Inversión inmobiliaria', 'Asesoría en EEUU y Ecuador'],
+        //   imageAlt: 'Familia observando oportunidades de bienes raíces en Estados Unidos y Ecuador',
+        //   cta: 'Explorar Propiedades',
+        // },
         {
           id: 'insurance',
           title: 'Seguros',
@@ -90,6 +92,34 @@ export const translations = {
           cta: 'Cotizar Seguro',
         },
       ],
+    },
+    usRealEstate: {
+      eyebrow: 'Bienes Raíces · Estados Unidos',
+      title: 'Invierte con confianza en el mercado de EEUU',
+      description:
+        'Te acompañamos en cada paso de la compra, venta o inversión en propiedades dentro de Estados Unidos, con asesoría clara para clientes locales e internacionales.',
+      bullets: [
+        'Compra y venta de propiedades residenciales',
+        'Asesoría para compradores internacionales',
+        'Rentas y administración de propiedades',
+        'Oportunidades de inversión inmobiliaria',
+      ],
+      cta: 'Explorar Propiedades en EEUU',
+      imageAlt: 'Vivienda moderna y ciudad de Estados Unidos representando oportunidades inmobiliarias',
+    },
+    ecuadorRealEstate: {
+      eyebrow: 'Bienes Raíces · Ecuador',
+      title: 'Encuentra tu propiedad ideal en Ecuador',
+      description:
+        'Ya sea para regresar a casa, invertir o asegurar el patrimonio familiar, te guiamos en el mercado inmobiliario ecuatoriano con total transparencia.',
+      bullets: [
+        'Compra y venta de propiedades en Ecuador',
+        'Asesoría para ecuatorianos en el exterior',
+        'Terrenos e inversión inmobiliaria',
+        'Trámites y documentación legal local',
+      ],
+      cta: 'Explorar Propiedades en Ecuador',
+      imageAlt: 'Paisaje y arquitectura de Ecuador representando oportunidades inmobiliarias',
     },
     contact: {
       eyebrow: 'Contacto',
@@ -133,7 +163,8 @@ export const translations = {
       about: 'About',
       services: 'Services',
       immigration: 'Immigration',
-      realEstate: 'Real Estate',
+      usRealEstate: 'US Real Estate',
+      ecuadorRealEstate: 'Ecuador Real Estate',
       insurance: 'Insurance',
       contact: 'Contact',
       cta: 'Book a Consultation',
@@ -193,16 +224,16 @@ export const translations = {
           imageAlt: 'Immigration advisor reviewing documents with clients',
           cta: 'Request a Consultation',
         },
-        {
-          id: 'real-estate',
-          title: 'Real Estate',
-          tagline: 'Sales & Rentals · US & Ecuador',
-          description:
-            'Find, sell, or rent properties backed by a team that knows the market in both countries.',
-          bullets: ['Property buying & selling', 'Residential rentals', 'Real estate investment', 'Guidance in the US & Ecuador'],
-          imageAlt: 'Family looking at real estate opportunities in the US and Ecuador',
-          cta: 'Explore Properties',
-        },
+        // {
+        //   id: 'real-estate',
+        //   title: 'Real Estate',
+        //   tagline: 'Sales & Rentals · US & Ecuador',
+        //   description:
+        //     'Find, sell, or rent properties backed by a team that knows the market in both countries.',
+        //   bullets: ['Property buying & selling', 'Residential rentals', 'Real estate investment', 'Guidance in the US & Ecuador'],
+        //   imageAlt: 'Family looking at real estate opportunities in the US and Ecuador',
+        //   cta: 'Explore Properties',
+        // },
         {
           id: 'insurance',
           title: 'Insurance',
@@ -214,6 +245,34 @@ export const translations = {
           cta: 'Get a Quote',
         },
       ],
+    },
+    usRealEstate: {
+      eyebrow: 'Real Estate · United States',
+      title: 'Invest with confidence in the US market',
+      description:
+        'We support you through every step of buying, selling, or investing in property within the United States, with clear guidance for local and international clients.',
+      bullets: [
+        'Residential property buying & selling',
+        'Guidance for international buyers',
+        'Rentals & property management',
+        'Real estate investment opportunities',
+      ],
+      cta: 'Explore US Properties',
+      imageAlt: 'Modern home and US skyline representing real estate opportunities',
+    },
+    ecuadorRealEstate: {
+      eyebrow: 'Real Estate · Ecuador',
+      title: 'Find your ideal property in Ecuador',
+      description:
+        'Whether you’re moving back home, investing, or securing your family’s wealth, we guide you through the Ecuadorian real estate market with full transparency.',
+      bullets: [
+        'Property buying & selling in Ecuador',
+        'Guidance for Ecuadorians abroad',
+        'Land & real estate investment',
+        'Local legal paperwork & processes',
+      ],
+      cta: 'Explore Ecuador Properties',
+      imageAlt: 'Ecuadorian landscape and architecture representing real estate opportunities',
     },
     contact: {
       eyebrow: 'Contact',

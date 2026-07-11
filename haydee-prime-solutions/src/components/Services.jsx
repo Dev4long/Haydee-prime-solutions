@@ -1,18 +1,15 @@
 import { useLanguage } from '../context/LanguageContext.jsx'
 import Reveal from './Reveal.jsx'
 import immigrationPhoto from '../assets/images/immigration-consultation.jpg'
-import realEstatePhoto from '../assets/images/realestate-promo.jpg'
 import insurancePhoto from '../assets/images/insurance-promo.jpg'
 
 const IMAGES = {
   immigration: immigrationPhoto,
-  'real-estate': realEstatePhoto,
   insurance: insurancePhoto,
 }
 
 const ICONS = {
   immigration: PassportIcon,
-  'real-estate': HomeIcon,
   insurance: ShieldIcon,
 }
 
@@ -81,16 +78,6 @@ function PassportIcon() {
       <circle cx="12" cy="10" r="3" />
       <path d="M8.5 16.5c0-1.7 1.6-3 3.5-3s3.5 1.3 3.5 3" />
       <path d="M7.5 6.5h9" />
-    </svg>
-  )
-}
-
-function HomeIcon() {
-  return (
-    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-      <path d="M3.5 11.5 12 4l8.5 7.5" />
-      <path d="M5.5 10v9.5a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1V10" />
-      <path d="M9.5 20.5V14h5v6.5" />
     </svg>
   )
 }

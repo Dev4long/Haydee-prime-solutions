@@ -2,14 +2,14 @@ import { createContext, useContext, useEffect, useMemo, useState } from 'react'
 
 const ThemeContext = createContext(null)
 
-function getInitialTheme() {
-  const stored = localStorage.getItem('hps-theme')
-  if (stored === 'dark' || stored === 'light') return stored
-  return window.matchMedia?.('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-}
+// function getInitialTheme() {
+//   const stored = localStorage.getItem('hps-theme')
+//   if (stored === 'dark' || stored === 'light') return stored
+//   return window.matchMedia?.('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+// }
 
 export function ThemeProvider({ children }) {
-  const [theme, setTheme] = useState(getInitialTheme)
+  const [theme, setTheme] = useState('light')
 
   useEffect(() => {
     localStorage.setItem('hps-theme', theme)

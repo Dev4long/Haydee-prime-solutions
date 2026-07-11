@@ -43,8 +43,9 @@ export default function Footer() {
         <div className="footer-links">
           <h4>{t.footer.ourServices}</h4>
           <a href="#immigration" onClick={scrollTo('immigration')}>{t.nav.immigration}</a>
-          <a href="#real-estate" onClick={scrollTo('real-estate')}>{t.nav.realEstate}</a>
           <a href="#insurance" onClick={scrollTo('insurance')}>{t.nav.insurance}</a>
+          <a href="#us-real-estate" onClick={scrollTo('us-real-estate')}>{t.nav.usRealEstate}</a>
+          <a href="#ecuador-real-estate" onClick={scrollTo('ecuador-real-estate')}>{t.nav.ecuadorRealEstate}</a>
         </div>
 
         <div className="footer-links">

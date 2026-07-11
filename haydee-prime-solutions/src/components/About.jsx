@@ -10,7 +10,7 @@ export default function About() {
       <div className="section-inner about-grid">
         <Reveal direction="left" className="about-media">
           <div className="about-image-frame">
-            <img src={consultationPhoto} alt={t.about.imageAlt} className="about-image" />
+            <img style={{ width: '100%', height: '100%', borderRadius: '5%' }} src={consultationPhoto} alt={t.about.imageAlt} className="about-image" />
           </div>
         </Reveal>
 

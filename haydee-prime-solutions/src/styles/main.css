@@ -218,6 +218,7 @@ button {
   left: 0;
   right: 0;
   z-index: 100;
+  width: 100%;
   background: transparent;
   transition: background-color 0.35s ease, box-shadow 0.35s ease, padding 0.35s ease;
   padding: 1.4rem 0;
@@ -230,7 +231,7 @@ button {
 }
 
 .navbar-inner {
-  max-width: var(--container-width);
+  /* max-width: var(--container-width); */
   margin: 0 auto;
   padding: 0 1.5rem;
   display: flex;
@@ -257,8 +258,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
   background: var(--green);
   color: var(--sand);
@@ -485,7 +486,7 @@ button {
   overflow: hidden;
   box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.45);
   border: 6px solid rgba(200, 178, 130, 0.35);
-  aspect-ratio: 3 / 4;
+  /* aspect-ratio: 3 / 4; */
 }
 
 .hero-portrait {
@@ -533,14 +534,15 @@ button {
 }
 
 .about-image-frame {
-  border-radius: var(--radius-lg);
+  /* border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow);
   aspect-ratio: 4 / 5;
-  position: relative;
+  position: relative; */
+  
 }
 
-.about-image-frame::after {
+/* .about-image-frame::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -555,7 +557,7 @@ button {
   height: 100%;
   object-fit: cover;
   object-position: center 15%;
-}
+} */
 
 .about-paragraph {
   color: var(--text-muted);
@@ -589,10 +591,108 @@ button {
   line-height: 1.55;
 }
 
+/* ============ Real Estate Regions ============ */
+.realestate-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.realestate-grid-reverse {
+  grid-template-columns: 1.1fr 0.9fr;
+}
+
+.realestate-grid-reverse .realestate-media {
+  order: 2;
+}
+
+.realestate-grid-reverse .realestate-copy {
+  order: 1;
+}
+
+.realestate-media-frame {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  /* aspect-ratio: 4 / 3; */
+}
+
+.realestate-image {
+  /* width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 70% 40%;
+  transform: scale(1.35); */
+}
+
+.realestate-media-badge {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--terracotta);
+  color: #fff8f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 20px -6px rgba(212, 106, 67, 0.6);
+}
+
+.realestate-media-graphic {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--sand);
+  background: linear-gradient(155deg, var(--green-dark) 0%, var(--green) 60%, var(--terracotta-dark) 130%);
+}
+
+.realestate-media-graphic svg {
+  width: 30%;
+  height: 30%;
+  min-width: 96px;
+  min-height: 96px;
+}
+
+.realestate-list {
+  margin-top: 1.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.7rem 1.5rem;
+}
+
+.realestate-list li {
+  position: relative;
+  padding-left: 1.4rem;
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.realestate-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.45rem;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--terracotta);
+}
+
+.realestate-copy .btn {
+  margin-top: 2rem;
+}
+
 /* ============ Services ============ */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
@@ -1006,12 +1106,24 @@ button {
   }
 
   .about-grid,
-  .contact-grid {
+  .contact-grid,
+  .realestate-grid,
+  .realestate-grid-reverse {
     grid-template-columns: 1fr;
+  }
+
+  .realestate-grid-reverse .realestate-media,
+  .realestate-grid-reverse .realestate-copy {
+    order: initial;
   }
 
   .about-image-frame {
     max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .realestate-media-frame {
+    max-width: 480px;
     margin: 0 auto;
   }
 
@@ -1034,6 +1146,10 @@ button {
   }
 
   .about-values {
+    grid-template-columns: 1fr;
+  }
+
+  .realestate-list {
     grid-template-columns: 1fr;
   }
 

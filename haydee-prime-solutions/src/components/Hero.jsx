@@ -1,6 +1,6 @@
 import { useLanguage } from '../context/LanguageContext.jsx'
 import Reveal from './Reveal.jsx'
-import portrait from '../assets/images/haydee-portrait.jpg'
+import portrait from '../assets/images/Haydee.jpg'
 
 export default function Hero() {
   const { t } = useLanguage()
