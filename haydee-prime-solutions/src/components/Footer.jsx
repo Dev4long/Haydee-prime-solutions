@@ -19,10 +19,10 @@ export default function Footer() {
           <div className="navbar-brand">
             {/* <span className="navbar-brand-mark">H.A.</span> */}
                 <span className="navbar-brand-mark"><img style={{ width: '100%', height: '100%', borderRadius: '50%', backgroundColor: 'white', padding: '2px' }} src={brand} alt="Prime Solutions" /></span>
-            <span className="navbar-brand-text">H.A. Prime Solutions</span>
+            <span className="footer-brand-title">H.A. Prime Solutions</span>
           </div>
           <div>
-             <span className="navbar-brand-text"><img style={{ width: '75%', height: '75%', maxWidth:"200px",maxHeight:"300px", paddingTop: '20px', margin:"auto" }} src={infinityQr} alt="Prime Solutions" /></span>
+             <span className="footer-qr"><img style={{ width: '75%', height: '75%', maxWidth:"200px",maxHeight:"300px", paddingTop: '20px', margin:"auto" }} src={infinityQr} alt="Prime Solutions" /></span>
           </div>
           <p className="footer-tagline">{t.footer.tagline}</p>
           <div className="footer-social">

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useLanguage } from '../context/LanguageContext.jsx'
 import Reveal from './Reveal.jsx'
 import { siteConfig } from '../data/content.js'
@@ -9,6 +9,18 @@ export default function Contact() {
   const { t } = useLanguage()
   const [form, setForm] = useState(initialForm)
   const [status, setStatus] = useState('idle') // idle | sending | success | error
+  const [captchaSolved, setCaptchaSolved] = useState(false)
+  const formRef = useRef(null)
+
+  useEffect(() => {
+    // hCaptcha renders its response token into a hidden field once solved.
+    // Poll for it since the widget script loads async and has no React hook.
+    const interval = setInterval(() => {
+      const field = formRef.current?.querySelector('[name="h-captcha-response"]')
+      setCaptchaSolved(Boolean(field?.value))
+    }, 400)
+    return () => clearInterval(interval)
+  }, [])
 
   const handleChange = (field) => (event) => {
     setForm((prev) => ({ ...prev, [field]: event.target.value }))
@@ -83,7 +95,7 @@ export default function Contact() {
         </div>
 
         <Reveal direction="right" delay={100} className="contact-form-wrapper">
-          <form className="contact-form" onSubmit={handleSubmit}>
+          <form className="contact-form" onSubmit={handleSubmit} ref={formRef}>
             <input type="hidden" name="access_key" value={siteConfig.web3formsAccessKey} />
             {/* Honeypot: hidden from real visitors, bots tend to fill every field. */}
             <input type="checkbox" name="botcheck" className="hidden-field" tabIndex={-1} autoComplete="off" />
@@ -124,9 +136,16 @@ export default function Contact() {
 
             <div className="h-captcha" data-captcha="true" />
 
-            <button type="submit" className="btn btn-accent contact-form-submit" disabled={status === 'sending'}>
+            <button
+              type="submit"
+              className="btn btn-accent contact-form-submit"
+              disabled={status === 'sending' || !captchaSolved}
+            >
               {status === 'sending' ? t.contact.form.sending : t.contact.form.submit}
             </button>
+            {!captchaSolved && status === 'idle' && (
+              <p className="contact-form-hint">{t.contact.form.captchaHint}</p>
+            )}
             {status === 'success' && <p className="contact-form-success">{t.contact.form.success}</p>}
             {status === 'error' && <p className="contact-form-error">{t.contact.form.error}</p>}
           </form>
