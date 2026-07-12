@@ -1,7 +1,7 @@
 export const translations = {
   es: {
     meta: {
-      title: 'HA Prime Solutions',
+      title: 'H.A. Prime Solutions',
     },
     nav: {
       home: 'Inicio',
@@ -19,11 +19,11 @@ export const translations = {
       themeDark: 'Modo oscuro',
     },
     hero: {
-      eyebrow: 'Inmigración · Bienes Raíces · Seguros',
+      eyebrow: 'Seguros de vida · Inmigracion · Bienes Raices ',
       title: 'Protegemos hoy,',
       titleHighlight: 'construimos mañana.',
       subtitle:
-        'En H.A. Prime Solutions te acompañamos con soluciones integrales y de confianza para proteger a tu familia, invertir en tu futuro y cumplir tus metas migratorias en Estados Unidos y Ecuador.',
+        'En H.A. Prime Solutions te acompañamos con soluciones integrales y de confianza para proteger a tu familia, invertir en tu futuro y cumplir tus metas migratorias en Estados Unidos.',
       ctaPrimary: 'Conoce Nuestros Servicios',
       ctaSecondary: 'Contáctanos',
       scrollHint: 'Desliza para descubrir más',
@@ -32,7 +32,7 @@ export const translations = {
       eyebrow: 'Sobre Nosotros',
       title: 'Un equipo cercano, profesional y bilingüe',
       paragraphs: [
-        'HaydeePrime Solutions nace del compromiso de ofrecer un servicio cálido, honesto y profesional a nuestra comunidad migrante. Acompañamos a familias e individuos en procesos que muchas veces parecen complicados, traduciéndolos en pasos claros y manejables.',
+        'H.A.Prime Solutions nace del compromiso de ofrecer un servicio cálido, honesto y profesional a nuestra comunidad migrante. Acompañamos a familias e individuos en procesos que muchas veces parecen complicados, traduciéndolos en pasos claros y manejables.',
         'Ya sea que estés iniciando un trámite migratorio, buscando tu próxima propiedad o protegiendo el futuro de tu familia con un seguro de vida, nuestro equipo trabaja contigo de principio a fin, con total transparencia y atención personalizada.',
       ],
       values: [
@@ -67,7 +67,7 @@ export const translations = {
           tagline: 'Trámites Migratorios y Notaría',
           description:
             'Te guiamos en tus trámites migratorios y servicios notariales con la seriedad y el cuidado que tu caso merece.',
-          bullets: ['Trámites migratorios', 'Servicios de notaría', 'Ciudadanía y residencia', 'Renovación de visas'],
+          bullets: ['Trámites migratorios', 'Servicios de notaría', 'Ajuste de estatus', 'Peticion de familiares'],
           imageAlt: 'Asesora de inmigración revisando documentos con clientes',
           cta: 'Solicitar Consulta',
         },
@@ -84,10 +84,10 @@ export const translations = {
         {
           id: 'insurance',
           title: 'Seguros',
-          tagline: 'Seguros de Vida Útiles y Anuales',
+          tagline: 'Seguros de Vida con beneficios en vida ',
           description:
             'Protege lo que más amas con planes de seguro de vida diseñados para darle tranquilidad a tu familia.',
-          bullets: ['Seguros de vida anuales', 'Protección familiar', 'Planes personalizados', 'Asesoría sin compromiso'],
+          bullets: ['Seguros de vida y IUL ', 'Protección familiar', 'planificacion patrimonial y jubilacion', 'anulidades indexadas'],
           imageAlt: 'Familia protegida por un seguro de vida mirando hacia su futuro',
           cta: 'Cotizar Seguro',
         },
@@ -100,7 +100,7 @@ export const translations = {
         'Te acompañamos en cada paso de la compra, venta o inversión en propiedades dentro de Estados Unidos, con asesoría clara para clientes locales e internacionales.',
       bullets: [
         'Compra y venta de propiedades residenciales',
-        'Asesoría para compradores internacionales',
+        'Casas de oferta como floreclosure actions asesoria profesional.',
         'Rentas y administración de propiedades',
         'Oportunidades de inversión inmobiliaria',
       ],
@@ -115,8 +115,8 @@ export const translations = {
       bullets: [
         'Compra y venta de propiedades en Ecuador',
         'Asesoría para ecuatorianos en el exterior',
-        'Terrenos e inversión inmobiliaria',
-        'Trámites y documentación legal local',
+        'Inversion inmobiliaria en terrenos, oficinas, consultorios medicos, departamentos y casas.',
+        'Inventario actual en las ciudades de Manta, Guayaquil y Cuenca.',
       ],
       cta: 'Explorar Propiedades en Ecuador',
       imageAlt: 'Paisaje y arquitectura de Ecuador representando oportunidades inmobiliarias',
@@ -156,7 +156,7 @@ export const translations = {
   },
   en: {
     meta: {
-      title: 'Haydee Prime Solutions',
+      title: 'H.A. Prime Solutions',
     },
     nav: {
       home: 'Home',

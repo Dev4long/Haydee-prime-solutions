@@ -1,5 +1,7 @@
 import { useLanguage } from '../context/LanguageContext.jsx'
 import { siteConfig } from '../data/content.js'
+import infinityQr from '../assets/images/infinityservicesgroup_qr.png'
+import brand from '../assets/images/Brand.png'
 
 export default function Footer() {
   const { t } = useLanguage()
@@ -15,18 +17,22 @@ export default function Footer() {
       <div className="section-inner footer-grid" style={{ paddingInline: '3rem' }}>
         <div className="footer-brand">
           <div className="navbar-brand">
-            <span className="navbar-brand-mark">HP</span>
-            <span className="navbar-brand-text">Haydee Prime Solutions</span>
+            {/* <span className="navbar-brand-mark">H.A.</span> */}
+                <span className="navbar-brand-mark"><img style={{ width: '100%', height: '100%', borderRadius: '50%', backgroundColor: 'white', padding: '2px' }} src={brand} alt="Prime Solutions" /></span>
+            <span className="navbar-brand-text">H.A. Prime Solutions</span>
+          </div>
+          <div>
+             <span className="navbar-brand-text"><img style={{ width: '75%', height: '75%', maxWidth:"200px",maxHeight:"300px", paddingTop: '20px', margin:"auto" }} src={infinityQr} alt="Prime Solutions" /></span>
           </div>
           <p className="footer-tagline">{t.footer.tagline}</p>
           <div className="footer-social">
             {/* <a href={siteConfig.facebook} target="_blank" rel="noreferrer" aria-label="Facebook">
               <FacebookIcon />
             </a> */}
-            <a href={siteConfig.instagram} target="_blank" rel="noreferrer" aria-label="Instagram">
+            <a href={siteConfig.instagram} style={{width:"50px", height:"50px"}} target="_blank" rel="noreferrer" aria-label="Instagram">
               <InstagramIcon />
             </a>
-            <a href={siteConfig.whatsappHref} target="_blank" rel="noreferrer" aria-label="WhatsApp">
+            <a href={siteConfig.whatsappHref} style={{width:"50px", height:"50px"}} target="_blank" rel="noreferrer" aria-label="WhatsApp">
               <WhatsAppIcon />
             </a>
           </div>
@@ -72,7 +78,7 @@ function FacebookIcon() {
 
 function InstagramIcon() {
   return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
       <rect x="3.5" y="3.5" width="17" height="17" rx="4.5" />
       <circle cx="12" cy="12" r="4" />
       <circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none" />
@@ -82,7 +88,7 @@ function InstagramIcon() {
 
 function WhatsAppIcon() {
   return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+    <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
       <path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Zm5.1 12.7c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 1-2.2.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4.2.5.7 1.8.8 1.9.1.2.1.3 0 .5-.1.2-.1.3-.3.5-.1.2-.3.4-.5.5-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.5 1.5.3.1.5.1.7-.1.2-.2.7-.8.9-1.1.2-.3.4-.2.6-.1.2.1 1.5.7 1.8.8.3.1.5.2.5.3.1.2.1.6-.1 1.2Z" />
     </svg>
   )

@@ -970,7 +970,7 @@ button {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1.4fr 1fr 1fr;
   gap: 2.5rem;
   padding-bottom: 3rem;
   border-bottom: 1px solid rgba(253, 251, 247, 0.14);

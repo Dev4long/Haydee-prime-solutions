@@ -1,10 +1,7 @@
 import { useLanguage } from '../context/LanguageContext.jsx'
 import RealEstateSection from './RealEstateSection.jsx'
-import usRealEstatePhoto from '../assets/images/ecuador.png'
+import ecuadorRealEstatePhoto from '../assets/images/ecuador.jpg'
 
-// No dedicated Ecuador property photo yet — drop one into src/assets/images
-// (e.g. ecuador-real-estate.jpg) and pass it as the `image` prop below to
-// swap the graphic panel for a real photo, same as USRealEstate.jsx does.
 export default function EcuadorRealEstate() {
   const { t } = useLanguage()
 
@@ -12,7 +9,7 @@ export default function EcuadorRealEstate() {
     <RealEstateSection
       id="ecuador-real-estate"
       content={t.ecuadorRealEstate}
-      image={usRealEstatePhoto}
+      image={ecuadorRealEstatePhoto}
       reverse
       icon={EcuadorIcon}
     />

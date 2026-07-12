@@ -1,6 +1,6 @@
 import { useLanguage } from '../context/LanguageContext.jsx'
 import RealEstateSection from './RealEstateSection.jsx'
-import usRealEstatePhoto from '../assets/images/NewYork.png'
+import usRealEstatePhoto from '../assets/images/NewYork.jpg'
 
 export default function USRealEstate() {
   const { t } = useLanguage()

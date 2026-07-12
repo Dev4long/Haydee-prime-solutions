@@ -61,8 +61,7 @@ export default function Navbar() {
     <header className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
       <div className="navbar-inner">
         <a href="#home" className="navbar-brand" onClick={handleNavClick('home')}>
-          {/* <span className="navbar-brand-mark">HP</span> */}
-           <span className="navbar-brand-mark"><img style={{ width: '100%', height: '100%', borderRadius: '50%', backgroundColor: 'white', padding: '2px' }} src={brand} alt="Prime Solutions" /></span>
+          <span className="navbar-brand-mark"><img style={{ width: '100%', height: '100%', borderRadius: '50%', backgroundColor: 'white', padding: '2px' }} src={brand} alt="Prime Solutions" /></span>
           <span className="navbar-brand-text">H.A. Prime Solutions</span>
         </a>
 
